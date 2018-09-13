@@ -1,0 +1,19 @@
+
+# Generic configuration to be applied to all services
+
+# added exceptions to make sure that the swagger-ui is accessible without authentication
+security:
+  ignored:
+  - /swagger-ui.html
+  - /webjars/**
+  - /swagger-resources/**
+  - /images/**
+  - /css/**
+  - /v2/**
+  - /health
+  - /metrics
+
+# Removing security for the health and metrics monitor console
+management:
+  security:
+    enabled: false

@@ -1,0 +1,9 @@
+security:
+  oauth2:
+    client:
+      clientId: onboarding_client
+      clientSecret: 5yynnKSq4ERW23cJ
+      accessTokenUri: http://localhost:9000/auth/oauth/token
+      userAuthorizationUri: http://localhost:9000/auth/oauth/authorize
+    resource:
+      userInfoUri: http://localhost:9000/auth/user/me

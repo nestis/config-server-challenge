@@ -1,0 +1,6 @@
+auth:
+  service:
+    client: "onboarding_client"
+    secret: "5yynnKSq4ERW23cJ"
+server:
+  port: 8081
