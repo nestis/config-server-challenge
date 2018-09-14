@@ -2,6 +2,21 @@ spring:
   application:
     name: onboarding-auth-service
 
+  datasource:
+    url: jdbc:mysql://localhost:27000/onboarding?useSSL=false
+    username: root
+    password: password
+    driver-class-name: com.mysql.jdbc.Driver
+
+  jpa:
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
 server:
   port: 9000   # HTTP (Tomcat) port
 
@@ -19,3 +34,4 @@ onboarding:
 jwt:
   singning:
     key: "AmPkxJZf=YH%uVprWueg23s^&4w5r_5H5_$RCznr"
+
