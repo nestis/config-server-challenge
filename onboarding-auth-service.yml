@@ -3,7 +3,7 @@ spring:
     name: onboarding-auth-service
 
   datasource:
-    url: jdbc:mysql://localhost:27000/onboarding?useSSL=false
+    url: jdbc:mysql://mysql-read:3306/mysqltutorial?useSSL=false
     username: root
     password: password
     driver-class-name: com.mysql.jdbc.Driver
