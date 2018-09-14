@@ -1,5 +1,6 @@
 auth:
   service:
+    url: http://team1-component2/oauth/token
     client: "onboarding_client"
     secret: "5yynnKSq4ERW23cJ"
 server:
